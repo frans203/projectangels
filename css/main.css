@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html{
+    font-family:sans-serif;
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Oxygen", arial;
+} 
+.clearfix:after, .row:after{
+content: '';
+display: block;
+clear:both;
+} 
+.axiwdth{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-play{
+    height: 5em; 
+     
+    display: none;
+}
+
+.icon-play img{
+max-width: 100%; 
+max-height: 100%;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 0.75em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color:white;
+    text-decoration: none;
+} 
+.button:hover{
+    background: #37a0a0;
+}
+.top-header{
+    text-align: center; 
+    /* box-shadow: 10px 5px 4px rgba(0,0,0,1);   */
+    
+  
+} 
+.top-header-logo{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.top-nav{
+    background: #612674; 
+    text-align: center;
+}
+.top-nav ul{
+    margin: 0;
+    padding: 1em 0;
+    list-style-type: none;
+}
+.top-nav a{ 
+    display: block;
+    color:white;
+    text-decoration: none; 
+    padding: 1em;
+} 
+.top-nav a:hover{
+    background: #7c3792;
+} 
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+} 
+.top-content-title{
+     color:#612674;
+     font-size:1.375em;
+     margin: 1.375em;
+} 
+.top-content-subtitle{
+    color: #a87bb7; 
+    font-size: 1em;
+    line-height: 1.5;
+} 
+.middle-content{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}  
+
+.middle-content p{
+    line-height: 2;
+    color: #222
+}
+
+
+.middle-content-title{
+    font-size: 1.25em; 
+    color: #652e79;
+    text-transform: uppercase;
+} 
+.middle-content span[class^=icon]{
+font-size:3em; 
+color: #652e78;
+} 
+
+.main-content{
+padding: 1.8em;
+}  
+
+.main-content p{
+    line-height: 1.2;
+}
+.main-content-article{
+    margin-bottom: 3.5em
+} 
+.main-content-title{
+    letter-spacing: 0.2em; 
+    font-size: 1.20em;
+    color: #652e78;
+    text-transform: uppercase;
+    font-weight: normal;
+} 
+/* footer */
+.hidden{
+    width: 0;
+    height:0;
+    overflow:hidden;
+    opacity: 0;
+    flex-direction: row;
+    display: flex;
+}
+.footer{
+    background: #25303e; 
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em; 
+} 
+.footer-menushare{
+    background: #303d4c;
+    padding: 0.5em; 
+
+} 
+.footer-menushare li{
+    display:inline-block; 
+    margin:0.2em 1em;
+   
+}
+.footer-menushare a{
+    font-size: 2em;
+    text-decoration:none;
+    color:white;
+}  
+
+
+@media screen and (min-width:43.75em) /*780px/16 = 48.75em*/ { 
+   /* formatando top header */
+   .top-header-logo{
+       float:left;
+   } 
+   .top-nav{
+  background:transparent; 
+  float:right; } 
+  .icon-play{
+    height: 5em; 
+    padding-top: 7em; 
+    display: block;
+}
+   
+   .top-nav ul{
+       margin: 0;
+       padding: 0;
+   }
+   .top-nav li{
+       display: inline-block; 
+       margin-top: 25px;
+       
+   }
+   .top-nav a{
+       color: #713a84;
+   } 
+   .top-nav a:hover{
+       
+       background:#e7d9fc;
+   }
+   
+   
+    /* formatando logo após o header */
+.top-content{
+    background: #521a66;
+    color:white;
+} 
+.top-content-title, .top-content-subtitle{
+    color:white; 
+
+} 
+.col-1_4{
+width: 44%;
+margin: 3%;
+float:left;
+} 
+.main-content-article .button{
+    float:right;
+}
+}
+
+
+@media screen and (min-width: 1000px) /* 1000/16 fica 62.5 em*/
+{
+    .top-content{
+        
+        background:   url(../images/bg_topo_1198x670.jpg);
+        padding-top: 15em;
+        height: 20em;  
+        background-position:top; 
+        background-size: 103%;
+    } 
+    .icon-play{
+        padding-top: 2em;
+    }
+
+} 
+
+@media screen and (min-width: 74em) /* 1024 dividido por 16 fica 64em */{
+    
+    .top-content{
+    padding: 12em;
+    
+    background-position: center top; 
+    /* background-image: linear-gradient(black 10%, transparent 90% ) ;
+    background-image: url(../images/bg_topo_1600x1374.jpg);  */ 
+    background-image:linear-gradient(rgba(0,0,0,0.7), transparent), url(../images/bg_topo_1600x1374.jpg) ; 
+    background-size:100% 10%, 100%;
+    background-position: center -10px, 50% 40%;
+    background-repeat: no-repeat;
+} 
+
+
+.col-1_4{
+    width: 19%;
+} 
+.col-1_2{
+    width: 45%; 
+    float: left;   
+}  
+.main-content-article .button{
+    float:none;
+} 
+.icon-play{
+    padding-top:7em;
+} 
+ .main-content{ 
+    padding: 0 3em;
+   
+} 
+
+}
